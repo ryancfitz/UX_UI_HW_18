@@ -1,82 +1,41 @@
-.inline-block { 
-    display: inline-block;
-    vertical-align: top;
-}
-
-nav {
-    width: 73%;
-    padding: 1%;
-}
-
-ul {
-    width: 50%;
-    margin-right: auto;
-    word-spacing: 20px;
-    font-family: Karla, Arial, sans-serif;
-    font-size: 28px;
-}
-
-.heroImg {
-    height: 1200px;
-}
-
-.row {
+.flexContainer {
     display: flex;
-  }
-
-.column {
-    width: 500px;
-    display: flex;
-    flex-direction: column;
     margin: auto;
-    font-family: Karla, Arial, sans-serif;
-    font-size: 26px;
-  }
+    justify-content: space-around;
 
-.h1 {
-    font-size: 45px;
-    color: gray;
-    height: 0px;
 }
 
-.name {
-    font-size: 85px;
-    font-family: architects daughter;
-    height: 200px;
+.workGrid {
+    display: grid;
+    padding: 40px;
+    grid-template-rows: 415px 415px;;
+    grid-template-columns: auto auto;
+    grid-row-gap: 50px;
 }
 
-footer {
-    margin: auto;
-    width: 50%;
-    padding-top: 125px;
-    text-align: center;
-    color: rgb(43, 37, 37);
-    height: 50px;
+.campHorizon {
+    background-color: #f4df38;
+    padding-left: 50px;
+    padding-right: 25px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    font-size: 20px;
 }
 
-button {
-    border-radius: 12px;
-    border-color: #00ABA3;
-    background-color: #00ABA3;
-    margin: 0 auto;
-    font-family: Karla, Arial, sans-serif;
-    font-size: 30px;
-    color: white;
-    padding: 25px;
-    width: 250px;
+.listFound {
+    background-color: #a2d0c9;
+    padding-left: 50px;
+    padding-right: 25px;
+    padding-top: 10px;
+    margin-bottom: 15px;
+    font-size: 20px;
 }
 
-button:hover {
-    background-color: tomato;
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-p {
-    font-family: Karla, Arial, sans-serif;
-    font-size: 16px;  
+@media only screen and (max-width: 600){
+    .workGrid {
+        display: grid;
+        padding: 40px;
+        grid-template-rows: 683px 683px;
+        grid-template-columns: auto auto;
+        grid-row-gap: 50px;
 }
